@@ -1,0 +1,99 @@
+:root {
+  --White-color: hsl(0, 0%, 100%);
+  --Grey-color: hsl(0, 0%, 20%);
+  --Grey2-color: hsl(0, 0%, 12%);
+  --Grey3-color: hsl(0, 0%, 8%);
+  --Green-color: hsl(75, 94%, 57%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--Grey3-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  background-color: var(--Grey2-color);
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.container h2 {
+  font-size: 1.5rem;
+  color: var(--White-color);
+}
+
+.container h2 span {
+  color: var(--Green-color);
+  display: block;
+  font-size: 1rem;
+  margin: 8px 0 16px;
+}
+
+.container p {
+  color: var(--White-color);
+  opacity: 0.8;
+}
+
+.container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+
+.container ul li {
+  width: 100%;
+}
+
+.container ul li button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--Grey-color);
+  color: var(--White-color);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.container ul li button a{
+  text-decoration: none;
+  color: var(--White-color);
+}
+
+.container ul li button:hover {
+  background-color: var(--Green-color);
+  color: var(--Grey3-color);
+}
+.attribution{
+    color: var(--White-color);
+    font-size: 10px;
+    margin: 20px;
+}
+.attribution a{
+  color: white;
+}
+.attribution a:hover{
+  color: var(--Green-color);
+}
